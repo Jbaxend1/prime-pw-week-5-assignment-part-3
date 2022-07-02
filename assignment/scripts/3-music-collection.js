@@ -41,3 +41,14 @@ console.log(collection);
 
 console.table(collection);
 
+function showCollection(inputCollection){
+    console.log(inputCollection.length);
+    for(album of inputCollection){
+        console.log('Title:', album.title);
+        console.log('By:', album.artist)
+        console.log('Published in:', album.yearPublished);
+    }
+
+}
+
+showCollection(collection);
