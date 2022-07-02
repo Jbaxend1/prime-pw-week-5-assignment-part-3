@@ -52,3 +52,19 @@ function showCollection(inputCollection){
 }
 
 showCollection(collection);
+
+
+
+
+function findByArtist(artistInput, collectionIn){
+    console.log('Artist Result:')
+    let artistResult = [];
+    for(let album of collectionIn){
+        if(artistInput === album.artist){
+            artistResult.push(album);
+        }
+    }
+    return artistResult;
+}
+
+console.log(findByArtist('Radiohead', collection));
